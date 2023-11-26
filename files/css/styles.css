@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+  /* Secccion Navegacion */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav h1 {
+    color: var(--primary-color);
+  }
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transicion);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+  /* 
+  position: sticky;: Hace que el elemento de navegación se comporte como "sticky" en la parte superior de la página cuando se desplaza hacia abajo.
+ top: 0; left: 0;: Fija la posición del elemento pegajoso en la parte superior izquierda.
+  z-index: 1;: Establece la propiedad de índice z para controlar el apilamiento de elementos; este valor específico significa que la barra de navegación estará por encima de otros elementos con un índice z inferior.
+  display: flex;: Hace que el contenedor de navegación sea un contenedor flexible.
+  align-items: center;: Centra verticalmente los elementos hijos del contenedor de navegación.
+  justify-content: space-between;: Distribuye el espacio disponible entre los elementos hijos del contenedor de navegación, colocando uno al principio y otro al final.
+  padding: 1.5rem 3.5rem;: Añade relleno alrededor del contenido del contenedor de navegación.
+  background-color: var(--bg-color);: Establece el color de fondo utilizando una variable CSS definida en otra parte del código.
+  
+  */
+  .menu-hamburguesa {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  /* Secccion Sobre Mi */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+  }
+  .hero img {
+    height: 37.5rem;
+    width: 37.5rem;
+  }
+  /*
+    display: flex;: Hace que el contenedor de la sección "Sobre Mí" sea un contenedor flexible.
+    align-items: center;: Centra verticalmente los elementos hijos del contenedor de la sección "Sobre Mí".
+    justify-content: center;: Centra horizontalmente los elementos hijos del contenedor de la sección "Sobre Mí".
+    gap: 2.5rem;: Establece un espacio entre los elementos hijos del contenedor de la sección "Sobre Mí".
+    max-width: 68.75rem;: Limita el ancho máximo del contenedor de la sección "Sobre Mí" a 68.75 unidades 
+    (la unidad específica no se proporciona, pero puede ser píxeles, por ejemplo).
+    margin: auto;: Centra el contenedor de la sección "Sobre Mí" horizontalmente en la página.
+  
+  
+  */
+  
+  .bio {
+    width: 30rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+    text-align: justify;
+  }
+  
+  .bio h1 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+  /* Mas sobre mi
+      .mas-sobre: Establece el color de fondo y el relleno de la sección, y justifica el texto dentro de ella.
+
+    .mas-sobre h2: Aplica estilos específicos al elemento h2 dentro de la sección, ajustando el margen inferior y centrando el texto.
+
+    .mas-sobre p: Define estilos para los párrafos dentro de la sección, estableciendo la altura de línea y agregando un pequeño relleno alrededor del texto.
+  
+  */
+  .mas-sobre {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+    text-align: justify;
+  }
+  
+  .mas-sobre h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+  }
+  
+  .mas-sobre p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+  }
+  .skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+  
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+  .icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+  /* 
+  Seccion de proyecto
+    .projects: Establece el color de fondo, el relleno y el margen superior para la sección de proyectos.
+
+    .project-pic: Define el ancho y la altura para las imágenes de proyecto.
+
+    .projects-container: Hace que el contenedor de proyectos sea un contenedor flexible, centrando los elementos vertical y horizontalmente.
+
+    .projects-title: Centra el texto y establece un margen inferior para el título de la sección de proyectos.
+
+    .project-container: Centra el texto, define un ancho y agrega relleno a los contenedores individuales de proyectos.
+
+    .project-container p: Agrega un pequeño relleno alrededor del texto de los párrafos dentro de los contenedores de proyectos.
+
+    .project-title: Establece un margen inferior para los títulos de proyectos.
+
+    .project-details: Establece un margen inferior para los detalles de los proyectos.
+
+    .project-card: Define estilos para las tarjetas de proyecto, como el color de fondo, el radio de borde, una sombra y relleno.
+  */
+  .projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  .project-pic {
+    width: 65%;
+    height: 60%;
+  }
+  
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .projects-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .project-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+  }
+  
+  .project-container p {
+    padding: 0.4rem;
+  }
+  
+  .project-title {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .project-details {
+    margin-bottom: var(--bottom-margin);
+  }
+  .project-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+
+  /*
+  Seccion de contactos
+    .contact: Añade un margen en la parte superior de la sección de contacto.
+
+    .contact h2: Centra el texto y establece un margen inferior para el título de la sección de contacto.
+
+    .contact-form-container: Define estilos para el contenedor del formulario de contacto, estableciendo un ancho máximo, centrando horizontalmente, aplicando relleno, bordes redondeados y una sombra.
+
+    .contact-form-container label: Establece estilos para las etiquetas del formulario, como la altura de línea, el peso de la fuente y el color del texto.
+
+    .contact-form-container textarea: Establece un tamaño mínimo de altura para el área de texto y ajusta el tamaño de la fuente.
+
+    .contact-form-container .input-field: Define estilos para los campos de entrada del formulario, incluyendo el ancho, el relleno, el borde, el tamaño de la fuente y otros estilos.
+
+    .input-field::placeholder: Establece estilos para el texto de marcador de posición en los campos de entrada, especificando el relleno y el color del texto.
+  */
+  .contact {
+    margin-top: 2rem;
+  }
+  
+  .contact h2 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+  }
+  
+  .contact-form-container {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+  }
+  
+  .contact-form-container label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+  }
+  
+  .contact-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
+  }
+  
+  .contact-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset var(--primary-color);
+    font-size: 0.875rem;
+    outline: none;
+  }
+  
+  .input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-color);
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+  }
+  .socials {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+  }
+  
+  .socicon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  .up-arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
+.politics {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: left;
+    margin: 2rem 0 0;
+}

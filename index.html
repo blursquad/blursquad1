@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="files/css/styles.css" />  
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="files/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="f/icons/favicon-32x32.png"
+    />
+
+    <!-- Animaciones CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Blur Squad| Web</title>
+  </head>
+<body>
+  <script>
+    // Este es el código JavaScript que imprimirá "Hello, World!" en la consola del navegador.
+    console.log("Hello, World!");
+  </script>
+    <nav>
+        <h1>Blur Squad</h1>
+        <ul class="navegacion">
+          <li><a href="#about" class="nav-link">Acerca de Nosotros</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Proyectos</a></li>
+          <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="menu-hamburguesa" id="menu-hamburguesa">
+          <ion-icon class="barras" name="menu-outline"></ion-icon>
+        </button>
+        
+  </nav>
+  <section class="hero" id="about">
+    <img
+      src="files/images/wfh_1.svg"
+      alt="jane-doe"
+      loading="lazy"
+      class="hero-img"
+    />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-titulo">Sobre Nosotros</h2>
+      <p class="bio-texto">
+        Blur Squad es un grupo de desarrolladores web altamente capacitados y experimentados que han dedicado 10 años a perfeccionar sus habilidades en el campo. 
+        Su enfoque principal se centra en aumentar la velocidad, la fiabilidad y la calidad de los proyectos, siempre teniendo en cuenta la seguridad.
+      </p>
+    </div>
+</section>
+<section class="mas-sobre">
+    <h2>Experiencia</h2>
+    <p>
+        Desarrollamos sistemas webs modernos para nuestros usuarios, nuestro fuente es el area del comercio donde llevamos 10 años
+    </p>
+    <p>
+        Tenemos experiencia trabajando con las mejores empresas de comercio en el pais y tambien en el extranjero
+    </p>
+    <p>
+        Desarrollamos el sistema web para la muy conocida empresa, Empresas Polar
+    </p>
+  </section>
+  <section class="skills" id="skills">
+    <h2 class="skill-header">Skills que manejamos</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img
+          src="files/icons/icons8-html-5.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="files/icons/icons8-css3.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="files/icons/icons8-javascript.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="files/icons/Mint-Y-logo-02.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="files/icons/docker-svgrepo-com.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="files/icons/icons8-git.svg"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+    </div>
+  </section>
+ <section class="projects" id="projects">
+    <h2 class="projects-title">Nuestros distintos proyectos</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="files/images/polar.png"
+          alt="polar"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Empresas Polar</h3>
+        <p class="project-details">
+          Sistema Web de Empresas Polar que
+          permite a los usuarios y mayoristas
+          comprar mercancia en el internet.
+        </p>
+        <a href="https://empresaspolar.com/" target="_blank" class="project-link">Revisalo</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="files/images/netflixClone.png"
+          alt="netflic-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Clon de Netflix</h3>
+        <p class="project-details">
+          Prototipo frontend de Netflix para poner en practica 
+            las habilidades de desarrolo web 
+        </p>
+        <a href="https://www.netflix.com/ve-en/" target="_blank" class="project-link">Revisalo</a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="files/images/greenyEarth.png"
+          alt="greeny-earth"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Greeny Earth</h3>
+        <p class="project-details">
+          Fundacion para ayuda al desarrollo ecologica
+          creada con react y django para los usuarios
+          de greeny earth  
+        </p>
+        <a href="https://science.nasa.gov/earth/" target="_blank" class="project-link">Revisalo</a>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2>Contacto</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://codepen.io/kenny21/pen/VRQBYY" method="POST">
+          <div class="form-control">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="sender-name"
+              placeholder="Escribe tu Nombre"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="sender-email"
+              placeholder="Escribe tu Email"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              cols="60"
+              rows="10"
+              placeholder="Escribe tu Mensaje"
+              name="message"
+              class="input-field"
+              required
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Enviar"
+            id="submit-btn"
+            class="submit-btn"
+          />
+        </form>
+      </div>
+    </div>
+  </section>
+  <div class="socials">
+    <a href="https://twitter.com/" target="_blank"
+      ><img
+        src="files/icons/icons8-twitter-circled.gif"
+        alt="Twitter"
+        loading="lazy"
+        class="socicon"
+    /></a>
+    <a href="https://www.instagram.com/" target="_blank"
+      ><img
+        src="files/icons/icons8-instagram.gif"
+        alt="Instagram"
+        loading="lazy"
+        class="socicon"
+    /></a>
+    <a href="https://www.linkedin.com/" target="_blank"
+      ><img
+        src="files/icons/icons8-linkedin-circled.gif"
+        alt="Linkedin"
+        loading="lazy"
+        class="socicon"
+    /></a>
+    <a href="https://github.com/" target="_blank"
+      ><img src="files/icons/icons8-github.gif" alt="Github" class="socicon"
+    /></a>
+  </div>
+  <footer>
+    <p class="copy">&copy; Copyright 2023</p>
+    <p class="copy">
+     Creado por
+      <a href="https://twitter.com/koladechris" target="_blank"
+        >Blur Squad</a>
+    </p>
+    <br>
+   <a class="politics" href="security.html">Politicas de Seguridad</a>
+   <a class="politics" href="cookies.html">Politicas de Cookies</a>
+   <a class="politics" href="seguridad.html">Politicas de Servicio</a>
+  </footer>
+ 
+
+</body>
+</html>
